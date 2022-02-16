@@ -1,0 +1,64 @@
+body{
+    background-color: black;
+    background-image: url("img/nes.png");
+    background-size: 1900px 950px;
+    background-repeat: no-repeat;
+
+}
+img {    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+
+
+#score {
+    text-align: center;
+    color: red;
+}
+#game {
+    width: 1300px;
+    height: 800px;
+    border: 2px solid black;
+    margin: auto;
+    background-image:  url("img/back.jpg");
+    background-size: cover;
+
+}
+#mario{
+    height: 175px;
+    width: 175px;
+    position: relative;
+    top: 520px;
+   
+    background-image: url("img/mario.webp");
+    background-size: cover;
+    animation: jump 0.5s;
+}
+#goomba{
+    height: 55px;
+    width: 55px;
+    position: relative;
+    top: 465px;
+    left: 1250px;
+    background-image: url("img/goomba.gif");
+    background-size: cover;
+    animation: goomba 4.33s infinite;
+    
+}
+@keyframes goomba {
+    0%{left: 1250px;}
+    100%{left: -50px;}
+}
+.jump-animation jump {
+    animation: jump 0.5s;
+}
+@keyframes jump {
+    0%{top: 450px;}
+    50%{top: 90px;}
+    75%{top: 90px;}
+    100%{top: 720;}
+
+}
