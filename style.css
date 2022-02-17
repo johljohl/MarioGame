@@ -3,6 +3,7 @@ body{
     background-image: url("img/nes.png");
     background-size: 1900px 950px;
     background-repeat: no-repeat;
+    ba
 
 }
 img {    
@@ -18,7 +19,7 @@ img {
     text-align: center;
     color: red;
 }
-.game {
+#game {
     width: 1300px;
     height: 800px;
     border: 2px solid black;

@@ -2,6 +2,10 @@ const mario = document.getElementById("mario");
 const goomba = document.getElementById("goomba");
 const score = document.getElementById("score");
 
+let mySound = new Audio ("mariojump.mp3")
+
+
+
 
 function jump () {
     mario.classList.add("jump");
@@ -12,7 +16,7 @@ function jump () {
 }
 document.addEventListener("keypress", function (event) {
     if (!mario.classList.contains("jump")) {
-    jump();
+    jump(); mySound.play();
     }
 });
     
@@ -27,7 +31,7 @@ setInterval(() => {
         goomba.style.display = "none";
     } else {
         goomba.style.display = "";
-    }
+    }   
 
     if ( goombaLeft < 50 && goombaLeft > 0 && marioTop > 150 ) {  
         alert("Game Over, man game over!! Your score was: " + score.innerText + "\n\nPlay Again");
@@ -36,3 +40,4 @@ setInterval(() => {
 } 
 
 }, 50);
+
