@@ -18,7 +18,7 @@ img {
     text-align: center;
     color: red;
 }
-#game {
+.game {
     width: 1300px;
     height: 800px;
     border: 2px solid black;
@@ -26,7 +26,7 @@ img {
     background:  url("img/back.jpg") repeat-x;
     overflow: hidden;
     background-size: cover;
-    animation: marioworld 1s linear infinite;
+    animation: marioworld 6s linear infinite;
 
 }
 #mario{
@@ -34,27 +34,26 @@ img {
     width: 175px;
     position: relative;
     top: 520px;
-   
     background-image: url("img/mario.webp");
     background-size: cover;
-    animation: jump 0.5s;
+    
 }
 #goomba{
     height: 55px;
     width: 55px;
     position: relative;
     top: 465px;
-    left: 1250px;
+    left: 1300px;
     background-image: url("img/goomba.gif");
     background-size: cover;
-    animation: goomba 1s infinite;
+    animation: goomba 2s infinite;
     
 }
 @keyframes goomba {
     0%{left: 1250px;}
-    100%{left: -50px;}
+    100%{left: -350px;}
 }
-.jump-animation jump {
+.jump{
     animation: jump 0.5s;
 }
 @keyframes jump {
@@ -66,7 +65,7 @@ img {
 }
 @keyframes marioworld {
     from{
-        background-position: 0px;
+        background-position: 3000px;
     }
     to{background-position: -1300px;
     }
