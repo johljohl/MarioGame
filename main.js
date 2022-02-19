@@ -2,9 +2,9 @@ const mario = document.getElementById("mario");
 const goomba = document.getElementById("goomba");
 const score = document.getElementById("score");
 
-let mySound = new Audio ("mariojump.mp3")
+let mySound = new Audio ("sound/mariojump.mp3")
 
-let myMusic = new Audio ("theme.mp3")
+let myMusic = new Audio ("sound/theme.mp3")
 
 
 function jump () {
