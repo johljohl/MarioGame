@@ -4,7 +4,7 @@ const score = document.getElementById("score");
 
 let mySound = new Audio ("mariojump.mp3")
 
-
+let myMusic = new Audio ("theme.mp3")
 
 
 function jump () {
@@ -16,7 +16,7 @@ function jump () {
 }
 document.addEventListener("keypress", function (event) {
     if (!mario.classList.contains("jump")) {
-    jump(); mySound.play();
+    jump(); mySound.play(); myMusic.play();
     }
 });
     
@@ -35,7 +35,8 @@ setInterval(() => {
 
     if ( goombaLeft < 50 && goombaLeft > 0 && marioTop > 150 ) {  
         alert("Game Over, man game over!! Your score was: " + score.innerText + "\n\nPlay Again");
-        location.reload();
+        location.reload(); 
+        
         
 } 
 
