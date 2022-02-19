@@ -34,7 +34,7 @@ setInterval(() => {
     }   
 
     if ( goombaLeft < 50 && goombaLeft > 0 && marioTop > 150 ) {  
-        alert("Game Over, man game over!! Your score was: " + score.innerText + "\n\nPlay Again");
+        alert("Game Over man, game over!! \n\nYour score was: " + score.innerText + "\n\nPress a key to play again!");
         location.reload(); 
         
         
